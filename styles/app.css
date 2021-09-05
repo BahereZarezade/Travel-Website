@@ -168,6 +168,9 @@ body span {
   background: none;
   color: #ffffff;
   padding: 3rem;
+  position: fixed;
+  top: 0px;
+  z-index: 10;
 }
 
 #main-head nav {
@@ -261,7 +264,11 @@ section#Home .container .b {
   flex-wrap: wrap;
   align-content: center;
   bottom: 10rem;
-  padding: 5rem 0;
+  padding: 8rem 0;
+}
+
+section#Home .container h2 {
+  padding: 18rem 1rem 1rem 0rem;
 }
 
 section#List-of-Locations {
@@ -485,6 +492,12 @@ footer .footer-wrapper {
 footer .footer-wrapper h5 {
   flex: 1 1 40rem;
   font-size: 2rem;
+  padding-bottom: 3rem;
+}
+
+footer .footer-wrapper h6 {
+  flex: 1 1 40rem;
+  font-size: 1.5rem;
   padding-bottom: 3rem;
 }
 

@@ -149,6 +149,9 @@ body {
     background: none;
     color: #ffffff;
     padding: 3rem;
+    position: fixed;
+    top: 0px;
+    z-index: 10;
     nav {
         min-height: 10vh;
         margin: auto;
@@ -241,7 +244,10 @@ section#Home {
             -ms-flex-line-pack: start;
             align-content: center;
             bottom: 10rem;
-            padding: 5rem 0;
+            padding: 8rem 0;
+        }
+        h2 {
+            padding: 18rem 1rem 1rem 0rem;
         }
     }
 }
@@ -444,6 +450,12 @@ footer {
             font-size: 2rem;
             padding-bottom: 3rem;
         }
+        h6 {
+            flex: 1 1 40rem;
+            font-size: 1.5rem;
+            padding-bottom: 3rem;
+        }
+
         ul {
             display: flex;
             flex: 1 1 40rem;
