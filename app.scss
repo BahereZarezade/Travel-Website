@@ -19,7 +19,7 @@ body {
     color: #ffffff;
     font-family: 'iransans';
     font-size: 62.5%;
-    line-height: 5rem;
+    line-height: 2;
     direction: rtl;
     text-align: right;
     /* حذف اسکرول افقی */
@@ -61,7 +61,7 @@ body {
         z-index: 3;
         padding: 1rem;
         border: none;
-        border-radius: 50px;
+        // border-radius: 50px;
         background: #fb2056;
         color: #fff;
         padding: 1rem 1rem;
@@ -72,7 +72,11 @@ body {
         animation-iteration-count: 3;
         &:hover {
             background: #ff00409d;
-            font-size: 2rem;
+        }
+        &:focus {
+            background: #ff00409d;
+            outline-style: solid;
+            outline-color: #fff;
         }
     }
     h2 {
@@ -314,14 +318,16 @@ section#Services {
             flex-wrap: wrap;
             align-items: center;
             justify-content: center;
+            padding-bottom: 5rem;
             .card {
                 min-height: 40vh;
-                border: none;
+                border: 0.5px solid #fff;
                 overflow: hidden;
                 color: #ffff;
                 flex: 1 1 25rem;
                 margin: 2rem 4.5rem;
-                box-shadow: 0px 10px 10px #000, 0px 20px 20px #000;
+                // box-shadow: 0px 10px 10px #000, 0px 20px 20px #000;
+                box-shadow: 0px 0px 9px #000, 10px 10px 9px rgb(139, 139, 139);
                 text-align: center;
                 transition: all 0.5s ease-in-out;
                 img {
